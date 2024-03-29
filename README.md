@@ -62,7 +62,7 @@ Modify the `augmentations` list in the script for tailored dataset enhancement, 
 
 The following image demonstrates different augmentation effects applied to a single original image of a chimpanzee. Each effect showcases a unique transformation that this tool is capable of:
 
-![Augmentation Examples](https://github.com/izzyxnac/image-augmentation-tool/blob/main/examples/monkey-noise.png)
+![Augmentation Examples](https://github.com/izzyxnac/image-augmentation-tool/blob/main/monkey-noise.png)
 
 _Descriptions for each effect from left to right:_
 
