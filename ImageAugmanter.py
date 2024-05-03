@@ -4,9 +4,10 @@ from imgaug import augmenters as iaa
 import random
 from tqdm import tqdm  
 
-# Define the input and output directories
-input_dir = 'C:/input/directory'  # Update this to your input directory path
-output_base_dir = 'C:/output/directory'  # Update this to your desired base output directory path
+# Define the input and output directories and the number of augmented images you want
+input_dir = './image_test'  # Update this to your input directory path
+output_base_dir = './augemmted_images'  # Update this to your desired base output directory path
+number_of_augmented_images = 100 # Update this to the number of augmented images you want
 
 # Basic augmentations applied to all sequences
 basic_augmentations = [
@@ -68,7 +69,7 @@ for filename in os.listdir(input_dir):
         seq = random.choice(augmentations)
         
         # Generate augmented images with progress bar
-        for i in tqdm(range(500), desc=f"Processing {filename}"): #range(500) is the number of augmented images you want
+        for i in tqdm(range(number_of_augmented_images), desc=f"Processing {filename}"): 
             img_aug = seq.augment_image(image)
             output_path = os.path.join(output_dir, f'augmented_{i}.jpg')
             imageio.imwrite(output_path, img_aug)

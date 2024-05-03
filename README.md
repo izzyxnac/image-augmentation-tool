@@ -41,7 +41,28 @@ The Image Augmentation Tool is a Python-based application designed to enrich mac
    ```
    cd image-augmentation-tool
    ```
-3. Install dependencies:
+3. Create a virtual environment (optional but recommended):
+
+   ```
+   python -m venv venv
+   ```
+
+   This command creates a virtual environment named `venv` in the project directory. You can replace `venv` with any other name you prefer.
+
+4. Activate the virtual environment:
+
+   - On Windows:
+     ```
+     venv\Scripts\activate
+     ```
+   - On macOS and Linux:
+     ```
+     source venv/bin/activate
+     ```
+
+   Activating the virtual environment isolates your project's dependencies from the system-wide Python environment.
+
+5. Install dependencies:
    ```
    pip install -r requirements.txt
    ```
